@@ -10,12 +10,14 @@
 ![Boss](https://github.com/Unk3wn/SystemnaheProgrammierung/blob/master/docs/ressources/images/boss.png)
 ![Raum](https://github.com/Unk3wn/SystemnaheProgrammierung/blob/master/docs/ressources/images/1_COM.png)
 
-## Räume
+## Szenario
+
+### Räume
 * Innenraum -> Firmenräume
 * Mitte -> "Luftschleuse"
 * Außen -> "Böse Außenwelt"
 
-## Personen
+### Personen
 * Person - Sicherheit I 
   * Startet in der Mitte
   * als *S1* bezeichnet
@@ -26,7 +28,7 @@
   * Außenbereich
   * als *G* bezeichnet
 
-## Ablauf
+### Ablauf
 1. S1 & S2 drücken beide Knöpfe im mittleren Raum
 
 2. Terminal wird aktiviert <br>

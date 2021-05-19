@@ -3,6 +3,9 @@
 
 ## Bildliche Darstellung
 
+![Boss](https://github.com/Unk3wn/SystemnaheProgrammierung/blob/master/docs/ressources/images/boss.png)
+![Raum](https://github.com/Unk3wn/SystemnaheProgrammierung/blob/master/docs/ressources/images/1_COM.png)
+
 ## Räume
 * Innenraum -> Firmenräume
 * Mitte -> "Luftschleuse"

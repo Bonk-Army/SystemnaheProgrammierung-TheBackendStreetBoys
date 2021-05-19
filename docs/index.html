@@ -49,7 +49,7 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="ressources/favicon.ico">
 
-	<title>Team Taskhub - Midterm Exam</title>
+	<title>Team Backend Street Boys - Abschlusspräsentation</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -68,8 +68,8 @@
 <div class="scriptsVARIABLES">
 	<script>
 		let nicoIcon = "&#129433;"; // 🦙
-		let daveIcon = "&#128130;"; // 💂
-		let dannyIcon = "&#128178;"; // 💲
+		let daveIcon = "&#129516;"; // 💂
+		let dannyIcon = "&#128081;"; // 💲
 		let lorenzicon = "&#128058;"; // 🐺
 		let paulicon = "&#128123;"; // 👻
 	</script>
@@ -121,6 +121,20 @@
 			</p>
 			<h2> ❤️Willkommen zu unserer <br>Präsentation</h2>
 		</section>
+		<section>
+			<h3>Sprecher</h3>
+			<p>
+				&#8598; Jedes Symbol steht für einen anderen Sprecher
+			<ul style="list-style-type: none">
+				<li><script>document.write(nicoIcon)</script> &#8594; Nico Holzh&auml;user</li>
+				<li><script>document.write(daveIcon)</script> &#8594; David Huh</li>
+				<li><script>document.write(lorenzicon)</script> &#8594; Lorenz Seufert</li>
+				<li><script>document.write(dannyIcon)</script> &#8594; Danny Kroll</li>
+				<li><script>document.write(paulicon)</script> &#8594; Paul Wolf</li>
+
+			</ul>
+			</p>
+		</section>
 		<!-- ToC -->
 		<section>
 			<h2 style="padding-top: 1%">Inhaltsverzeichnis</h2>
@@ -138,20 +152,6 @@
 				</ol>
 				<li>Fazit</li>
 			</ol>
-		</section>
-		<section>
-			<h3>Sprecher</h3>
-			<p>
-				&#8598; Jedes Symbol steht für einen anderen Sprecher
-			<ul style="list-style-type: none">
-				<li><script>document.write(nicoIcon)</script> &#8594; Nico Holzh&auml;user</li>
-				<li><script>document.write(daveIcon)</script> &#8594; David Huh</li>
-				<li><script>document.write(lorenzicon)</script> &#8594; Lorenz Seufert</li>
-				<li><script>document.write(dannyIcon)</script> &#8594; Danny Kroll</li>
-				<li><script>document.write(paulicon)</script> &#8594; Paul Wolf</li>
-
-			</ul>
-			</p>
 		</section>
 	</div>
 	<!--
@@ -254,6 +254,7 @@
 				<h2>2.2.3 Realisierung in MCU 8051 IDE</h2>
 			</section>
 			<section>
+				<h3>Intro</h3>
 				<pre><code data-trim data-noescape>
 					;----------------------------------
 					; Anti Intruder 100
@@ -422,6 +423,7 @@
 				</code></pre>
 			</section>
 			<section>
+				<h3>Ende</h3>
 				<pre><code data-trim data-noescape>
 					; SCHLEIFENENDE
 					LJMP SCHLEIFE
@@ -432,10 +434,21 @@
 			</section>
 		</section>
 	</div>
-	<div class="fazit" id="fazit">
+	<div class="slides" id="fazit">
 		<section>
-			<h3><a target="_blank" href="https://github.com/Mueller-Patrick/SE-e-Portfolio">Let's start your 🐳 & Jenkins Adventure <br> with our Examples on Github</a></h3>
-			<br>
+			<h2>Dokumentation</h2>
+			<img width="20%" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png">
+			<h3><a target="_blank" href="https://www.notion.so/tinf19b4/Dokumentation-Anti-Inruder-1000-8d5378d7ddda4ff2b4371f98b117a417">Was für eine tolle Dokumentation des Projektes!</a></h3>
+		</section>
+		<section>
+			<h2>Präsentation</h2>
+			<img width="25%" src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg">
+			<p>Schaut euch außerdem unseren <a target="_blank" href="https://raw.githubusercontent.com/Unk3wn/SystemnaheProgrammierung/master/docs/index.html">Presentation - Sourcecode</a> und <a target="_blank" href="https://revealjs.com/">reveal.js an </a></p>
+		</section>
+		<section>
+			<h2>Code</h2>
+			<img width="20%" src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png">
+			<h3><a target="_blank" href="https://github.com/Unk3wn/SystemnaheProgrammierung">Teste unser Tool noch Heute mit nur einem klick!</a></h3>
 		</section>
 	</div>
 	<div class="slides" id="endslide">
@@ -461,41 +474,29 @@
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 		Reveal.on( 'slidechanged', event => {
-			if(event.indexh == 3 || event.indexh == 6 && event.indexv == 1){
-				document.getElementById("header").innerHTML = maintainer+headOfIT+buisnessClient+clientUser;
-			}
-			if(event.indexh == 6 && event.indexv == 3 || event.indexh == 10){
-				document.getElementById("header").innerHTML = maintainer+headOfIT+buisnessClient;
-			}
-			if(event.indexh == 7 || event.indexh == 8 && event.indexv == 1){
-				document.getElementById("header").innerHTML = buisnessClient+headOfIT;
-			}
-			if(event.indexh == 11){
-				document.getElementById("header").innerHTML = maintainer+headOfIT+clientUser;
-			}
-			if(event.indexh == 12){
-				document.getElementById("header").innerHTML = maintainer+headOfIT;
-			}
-			if(event.indexh == 2 || event.indexh == 5 || event.indexh == 9 || event.indexh == 16){
-				document.getElementById("header").innerHTML = "";
-			}
-			if (event.indexh == 20){
+			if (event.indexh == 9){
 				document.getElementById("troll").innerHTML = 'Today for only 99,99€  and <br> your paper + ink + printer';
 			}
-			if (event.indexh == 21 || event.indexh == 19){
-				document.getElementById("troll").innerHTML = "";
+			if(event.indexh < 9 || event.indexh > 9){
+				document.getElementById("troll").innerHTML = '';
 			}
 
 			//#####################################################
 
-			if (event.indexh == 5 || event.indexh == 12 && event.indexv >= 2 || event.indexh == 15){
+			if (event.indexh == 0){
 				document.getElementById("persons").innerHTML = nicoIcon;
 			}
-			if (event.indexh == 7 || event.indexh == 12 && event.indexv < 2 || event.indexh == 13){
-				document.getElementById("persons").innerHTML = krissiIcon;
-			}
-			if (event.indexh == 3 || event.indexh == 9 || event.indexh == 16){
+			if (event.indexh == 3){
 				document.getElementById("persons").innerHTML = dannyIcon;
+			}
+			if (event.indexh == 6){
+				document.getElementById("persons").innerHTML = paulicon;
+			}
+			if (event.indexh == 8 || event.indexh == 9){
+				document.getElementById("persons").innerHTML = lorenzicon;
+			}
+			if (event.indexh == 8 && event.indexv > 3){
+				document.getElementById("persons").innerHTML = daveIcon;
 			}
 		} );
 	</script>

@@ -180,10 +180,6 @@
 				<h2 >1.2 Grafische Darstellung</h2>
 			</section>
 			<section>
-				<h2>Abgesicherte Überwachungskammer</h2>
-				<img style="width: 40%" src="./ressources/images/boss.png">
-			</section>
-			<section>
 				<h2>Ausgangssituation</h2>
 				<img style="width: 80%" src="./ressources/images/1_COM.png">
 			</section>
@@ -194,6 +190,10 @@
 			<section>
 				<h2>Gesicherter Bereich</h2>
 				<img style="width: 80%" src="./ressources/images/3_COM.png">
+			</section>
+			<section>
+				<h2>Abgesicherte Überwachungskammer</h2>
+				<img style="width: 40%" src="./ressources/images/boss.png">
 			</section>
 		</section>
 	</div>
@@ -252,6 +252,9 @@
 			</section>
 			<section>
 				<h2>2.2.3 Realisierung in MCU 8051 IDE</h2>
+			</section>
+			<section>
+				<img style="width: 80%" src="./ressources/images/MCUFULL.png">
 			</section>
 			<section>
 				<h3>Intro</h3>
@@ -434,6 +437,26 @@
 			</section>
 		</section>
 	</div>
+	<div class="slides" id="demo">
+		<section>
+			<section>
+				<h1>Demo</h1>
+			</section>
+			<section>
+				<h2>UC - Tür öffnen</h2>
+				<video style="width: 70%" data-autoplay><source data-src="./ressources/videos/AllGood.mp4" type="video/mp4"></src></video>
+			</section>
+			<section>
+				<h2>UC - Alarm schreitet ein</h2>
+				<video style="width: 70%" data-autoplay><source data-src="./ressources/videos/Alarm einschalten.mp4" type="video/mp4"></src></video>
+			</section>
+			<section>
+				<h2>UC - Alarm ausschalten</h2>
+				<video style="width: 70%" data-autoplay><source data-src="./ressources/videos/Alarm ausschalten.mp4" type="video/mp4"></src></video>
+			</section>
+		</section>
+
+	</div>
 	<div class="slides" id="fazit">
 		<section>
 			<h2>Dokumentation</h2>
@@ -474,10 +497,10 @@
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 		Reveal.on( 'slidechanged', event => {
-			if (event.indexh == 9){
+			if (event.indexh == 10){
 				document.getElementById("troll").innerHTML = 'Today for only 99,99€  and <br> your paper + ink + printer';
 			}
-			if(event.indexh < 9 || event.indexh > 9){
+			if(event.indexh < 10 || event.indexh > 10){
 				document.getElementById("troll").innerHTML = '';
 			}
 
@@ -489,10 +512,10 @@
 			if (event.indexh == 3){
 				document.getElementById("persons").innerHTML = dannyIcon;
 			}
-			if (event.indexh == 6){
+			if (event.indexh == 6 || event.indexh == 9){
 				document.getElementById("persons").innerHTML = paulicon;
 			}
-			if (event.indexh == 8 || event.indexh == 9){
+			if (event.indexh == 8 || event.indexh == 10){
 				document.getElementById("persons").innerHTML = lorenzicon;
 			}
 			if (event.indexh == 8 && event.indexv > 3){
